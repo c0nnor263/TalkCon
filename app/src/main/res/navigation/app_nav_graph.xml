@@ -7,20 +7,42 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.conboi.talkcon.ui.MainFragment"
+        android:name="com.conboi.talkcon.ui.main.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_chatFragment"
             app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/chatFragment"
-        android:name="com.conboi.talkcon.ui.ChatFragment"
+        android:name="com.conboi.talkcon.ui.chat.ChatFragment"
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" >
         <argument
-            android:name="id"
-            app:argType="string" />
+            android:name="userChat"
+            app:argType="com.conboi.talkcon.data.model.UserChat" />
     </fragment>
+    <fragment
+        android:id="@+id/soundSettingsFragment"
+        android:name="com.conboi.talkcon.ui.menu.SoundSettingsFragment"
+        android:label="fragment_sound_settings"
+        tools:layout="@layout/fragment_sound_settings" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.conboi.talkcon.ui.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_soundSettingsFragment"
+            app:destination="@id/soundSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.conboi.talkcon.ui.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>

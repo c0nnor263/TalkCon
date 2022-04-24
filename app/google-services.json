@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "791307800938",
+    "firebase_url": "https://talkcon-debug-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "talkcon-debug",
+    "storage_bucket": "talkcon-debug.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791307800938:android:b52c0a96537b0dbb979513",
+        "android_client_info": {
+          "package_name": "com.conboi.talkcon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791307800938-a6ej208qoprs5qqa1k65ttetlolf9hvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.conboi.talkcon",
+            "certificate_hash": "2d25609609e70c32908507aafa7634f8168d2fcd"
+          }
+        },
+        {
+          "client_id": "791307800938-2kg0efu3pho4vh599qcvntaak8goi60a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY6GcjqcGHV4f40NV9PQWaHJfXI0beTKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791307800938-2kg0efu3pho4vh599qcvntaak8goi60a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

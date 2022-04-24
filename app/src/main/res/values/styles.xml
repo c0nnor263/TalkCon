@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="MyCustomTheme" parent="@android:style/Theme.Panel">
-        <item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>
+
+    <style name="mMaterialAlertDialog.Rounded" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/AlertDialogStyle.Rounded</item>
     </style>
 
-    <style name="MyAnimation.Window" parent="@android:style/Animation.Activity">
-        <item name="android:windowEnterAnimation">@anim/anim</item>
-        <item name="android:windowExitAnimation">@anim/anim</item>
+    <style name="AlertDialogStyle.Rounded" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialAlertDialog.Rounded</item>
     </style>
+
+    <style name="ShapeAppearance.MaterialAlertDialog.Rounded" parent="">
+        <item name="cornerSize">16dp</item>
+    </style>
+
 </resources>
